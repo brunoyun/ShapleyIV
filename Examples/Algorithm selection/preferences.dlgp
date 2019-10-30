@@ -1,0 +1,10 @@
+%PREFERENCE ATOMS FOR USER U1
+
+pref(u1,a1,a2).
+pref(u1,a4,a3).
+
+%PREFERENCE RULES FOR USER U1
+
+stpref(u1,X,Y) :- neq(X,Y), t(X).
+stpref(u1,X,Y) :- ar(X), mp(Y), neq(X,Y).
+stpref(u1,X,Y) :- q(X), t(Y), neq(X,Y).

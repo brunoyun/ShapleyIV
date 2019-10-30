@@ -129,6 +129,11 @@ public class KnowledgeBase {
 		else
 			System.err.println("Cannot add the preference atom, parameters are not options.");
 	}
+	
+	public void addPreferenceAtom(Atom a) {
+		if(! preference_atoms.contains(a))
+			preference_atoms.add(a);
+	}
 
 	public void addPreferenceRules(String s) {
 		DlgpParser parser = new DlgpParser(s);
@@ -138,6 +143,10 @@ public class KnowledgeBase {
 				preference_rules.add((Rule) o);
 			}
 		}
+	}
+	
+	public void addPreferenceRules(Rule s) {
+		preference_rules.add(s);
 	}
 
 	public KnowledgeBase substract(Object o) throws AtomSetException {
@@ -214,11 +223,11 @@ public class KnowledgeBase {
 
 
 	public String toString() {
-		String result = "--- KB FOR "+user+" ---\nPreference atoms:\n";
+		String result = "Preference atoms: ";
 		result = result.concat(preference_atoms.toString()+"\n");
 
-		result = result.concat("Preference rules: \n");
-		result = result.concat(preference_rules+"\n");
+		result = result.concat("Preference rules: ");
+		result = result.concat(preference_rules.toString()+"\n");
 
 		//		result = result.concat("\nDifference atoms: \n");
 		//		result = result.concat(difference_atoms.toString()+"\n");
