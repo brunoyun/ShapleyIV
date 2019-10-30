@@ -1,4 +1,4 @@
-Acknowledgements
+# Acknowledgements
 ==================
 
 This tool is inspired from previous works in the literature:
@@ -8,7 +8,7 @@ This tool is inspired from previous works in the literature:
     * DLGP: An extended Datalog Syntax for Existential Rules and Datalog±. GraphIK Team∗, LIRMM (2017)
     * Graal: A Toolkit for Query Answering with Existential Rules. Baget, M. Leclère, M.-L. Mugnier, S. Rocher, and C. Sipieter (2015)
 
-Description
+# Description
 ==================
 
 This tool is designed for decision-making using three types of inconsistency measures (and values) from an inconsistent knowledge base.
@@ -23,7 +23,7 @@ The output of the tool is:
 
     * A consistent partial preference for each user that is computing using a Shapley inconsistency value.
     
-Usage
+# Usage
 ==================
 
 The tool should be launched using the following command: `java -jar preference_resolution.jar [Option file] [Context file] [Preference file]` where:
@@ -34,7 +34,7 @@ The tool should be launched using the following command: `java -jar preference_r
 
 Example:
   
-    *java -jar preference_resolution.jar Examples/AlgorithmSelection/options.txt Examples/AlgorithmSelection/context.dlgp Examples/AlgorithmSelection/preferences.dlgp*
+    **java -jar preference_resolution.jar Examples/AlgorithmSelection/options.txt Examples/AlgorithmSelection/context.dlgp Examples/AlgorithmSelection/preferences.dlgp**
 
 Content
 ==================
