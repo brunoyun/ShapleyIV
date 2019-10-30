@@ -1,0 +1,8 @@
+%ATOMS REPRESENTING THE CHARACTERISTICS OF THE OPTIONS
+
+mp(a1).
+mp(a2).
+ar(a2).
+ar(a3).
+t(a3).
+q(a4).

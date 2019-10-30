@@ -39,8 +39,10 @@ public class App
 	public static void main( String[] args ) throws ChaseException, HomomorphismException, AtomSetException, IOException
 	{
 		if(args.length != 3) {
-			argumentsDisplay();
 			System.err.println("Please enter the correct number of arguments.");
+			
+			argumentsDisplay();
+			
 		}
 		else {
 			//Initialising the tool
@@ -179,10 +181,10 @@ public class App
 	}
 
 	private static void argumentsDisplay() {
-		System.out.println("The arguments should be [Option file] [Context file] [Preference file] where:\n\n"
+		System.out.println("\n\nThe arguments should be [Option file] [Context file] [Preference file] where:\n\n"
 				+ "- [Option file] is the file containing the options. The options should be given one per line and should follow the constant notation of the DLGP format.\n"
 				+ "- [Context file] is the file containing the atoms describing the characteristics of the options. They should be ground atoms using only options and follow the fact notation of the DLGP format.\n"
-				+ "- [Preference file] is the file containing the preference rules/atoms given by the users.");
+				+ "- [Preference file] is the file containing the preference rules/atoms given by the users.\n");
 	}
 
 }
