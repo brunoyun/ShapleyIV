@@ -34,11 +34,15 @@ The tool should be launched using the following command: `java -jar preference_r
   
 ```java -jar preference_resolution.jar Examples/AlgorithmSelection/options.txt Examples/AlgorithmSelection/context.dlgp Examples/AlgorithmSelection/preferences.dlgp```
 
-#Content
+# Content
 
-This repository contains the source-code needed to compile a jar application.
+This repository contains:
+
+- The source-code of the tool
+- A compiled jar of the tool
+- Simple examples
 
 
-#Contacts
+# Contacts
 
 In order to contact me, send me an email at: yun@lirmm.fr
